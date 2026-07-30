@@ -1,0 +1,17 @@
+# === Phase 1 dependencies (config + logging foundation) ===
+pydantic>=2.7,<3.0
+pydantic-settings>=2.3,<3.0
+python-dotenv>=1.0,<2.0
+
+# === Phase 2 dependencies (DOCX reading) ===
+python-docx>=1.1,<2.0
+
+# === Phase 3 dependencies (multi-format knowledge extraction) ===
+PyMuPDF>=1.24,<2.0          # PDF text extraction
+openpyxl>=3.1,<4.0          # Excel reading
+
+# === Dependencies for later phases (listed now so the file stays accurate
+#     as we go, but not required yet) ===
+# streamlit>=1.36,<2.0        # Later: UI
+# fastapi>=0.111,<1.0         # Later: optional API layer
+# anthropic>=0.30,<1.0        # Phase 5: Claude API client
